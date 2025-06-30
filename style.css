@@ -4,6 +4,16 @@
 
 body{
     background-color: rgb(241, 239, 236);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#title{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-size: 40px;
+    margin: 0
 }
 
 .grid-container{
@@ -16,7 +26,16 @@ body{
     height: 800px;
     margin: auto;
 }
-/* 
-.grid-box:hover{
-    background-color: #D4C9BE;
-} */
+
+.size-select-container{
+    margin-bottom: 5px;
+    display: flex;
+    gap: 40px;
+}
+.slider{
+    width: 500px;
+}
+
+.size-select-container p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
