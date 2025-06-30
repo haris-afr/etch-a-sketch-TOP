@@ -18,8 +18,11 @@ function createGrid(gridLen){
     for (i = 0; i < gridLen * gridLen; i++){
         const gridBox = document.createElement("div");
         gridBox.classList.add("grid-box");
-        gridBox.setAttribute("style", "border: 5px solid rgb(3, 3, 3); width: 200px; height: 200px; background-color: rgb(241, 239, 236)");
 
+        gridBox.setAttribute("style", "border: 1px solid rgb(3, 3, 3); background-color: rgb(241, 239, 236)");
+        gridBox.style.width = 800 / gridLen + "px";
+        gridBox.style.height = 800 / gridLen + "px";
+        
         gridBox.addEventListener("mouseenter", (element) => toggleColor(element));
 
         gridContainer.appendChild(gridBox);
@@ -32,10 +35,6 @@ function destroyGrid(){
     }
 }
 
-// creates, styles and appends grid boxes to the container element
-for (i = 0; i < 16; i++){
-
-}
 
 slider.addEventListener("input", (evt) => {
     const sliderVal = evt.target.value;
@@ -44,3 +43,5 @@ slider.addEventListener("input", (evt) => {
     destroyGrid();
     createGrid(sliderVal);
 })
+
+createGrid(4);
