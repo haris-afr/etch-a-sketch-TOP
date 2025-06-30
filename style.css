@@ -30,6 +30,7 @@ body{
 .size-select-container{
     margin-bottom: 5px;
     display: flex;
+    align-items: center;
     gap: 40px;
 }
 .slider{
