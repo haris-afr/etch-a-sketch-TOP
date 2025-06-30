@@ -11,7 +11,7 @@ function toggleColor(element){
     if (bgColor == "rgb(241, 239, 236)"){
         element.target.style.backgroundColor = "rgb(212, 201, 190)";
     }
-    else if (bgColor == "rgb(212, 201, 190)"){
+    else{
         element.target.style.backgroundColor = "rgb(241, 239, 236)";
     }
 }
